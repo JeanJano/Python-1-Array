@@ -19,7 +19,7 @@ def ft_zoom(path: str, crop: dict) -> None:
         height, width, _ = crop_img.shape
         for y in range(height):
             for x in range(width):
-                r, g, b = img[y, x]
+                r, g, b = crop_img[y, x]
                 print(f"[{r}, {g}, {b}]")
     
     except AssertionError as e:
